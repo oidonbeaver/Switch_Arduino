@@ -60,9 +60,9 @@ void loop()
   delay(6000);
   
   //↓
-  SwitchControlLibrary().MoveLeftStick(128, 255); // 下
+  SwitchControlLibrary().MoveHat(4); // 下
   delay(80);
-  SwitchControlLibrary().MoveLeftStick(128, 128); // 止める
+  SwitchControlLibrary().MoveHat(8); // 止める
   delay(920);
 
   //A
@@ -75,9 +75,9 @@ void loop()
   delay(1000);
 
   //↓
-  SwitchControlLibrary().MoveLeftStick(128, 255); // 下
+  SwitchControlLibrary().MoveHat(4); // 下
   delay(80);
-  SwitchControlLibrary().MoveLeftStick(128, 128); // 止める
+  SwitchControlLibrary().MoveHat(8); // 止める
   delay(920);
 
   //..

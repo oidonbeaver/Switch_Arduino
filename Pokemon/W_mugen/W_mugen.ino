@@ -41,7 +41,7 @@ void loop() {
     delay(200);
     loopnum++;
   //こまめにレポートを書く
-    if (loopnum>10){
+    if (loopnum>30){
     delay(300);
     report();
     loopnum=0;
