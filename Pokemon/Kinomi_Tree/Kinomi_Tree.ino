@@ -1,4 +1,5 @@
 //通信対戦で日付変更できるモードにしておく
+//きのみを一回だけ揺らす
 #include <SwitchFunctions.h>
 int loopnum=0;
 void setup() {
@@ -26,17 +27,21 @@ SwitchControlLibrary().ReleaseButtonB();
 
 void loop() {
     delay(600);
-    SwitchControlLibrary().PressButtonA();
+    for (int i=0; i<3; i++){
+      SwitchControlLibrary().PressButtonA();
     delay(70);
     SwitchControlLibrary().ReleaseButtonA();
-    delay(100);
+    delay(500);
+      
+    }
+    
     for (int i =0; i<25; i++){
       SwitchControlLibrary().PressButtonB();
-      delay(50);
+      delay(70);
       SwitchControlLibrary().ReleaseButtonB();
-      delay(100);
+      delay(200);
     }
-    delay(400);
+    delay(700);
     changeday();
     delay(200);
     loopnum++;

@@ -1,4 +1,6 @@
 //ちょいらくモードにしないを選択しておく
+//こっちのほうが2よりいいかも
+//https://note.com/hayatotiry/n/nd5196f52a261
 #include <SwitchFunctions.h>
 // int loopnum = 0;
 void setup()
@@ -35,25 +37,25 @@ void loop()
   for (int i=0; i < 3; i++)
   {
     SwitchControlLibrary().PressButtonA();
-    delay(100);
+    delay(70);
     SwitchControlLibrary().ReleaseButtonA();
-    delay(900);
+    delay(930);
   }
   //..
   delay(2000);
 
   //B..B
   SwitchControlLibrary().PressButtonB();
-  delay(100);
+  delay(70);
   SwitchControlLibrary().ReleaseButtonB();
-  delay(900); 
+  delay(930); 
 
   delay(2000);
 
   SwitchControlLibrary().PressButtonB();
-  delay(100);
+  delay(70);
   SwitchControlLibrary().ReleaseButtonB();
-  delay(900);
+  delay(930);
 
 
   //......
@@ -61,37 +63,37 @@ void loop()
   
   //↓
   SwitchControlLibrary().MoveHat(4); // 下
-  delay(80);
+  delay(70);
   SwitchControlLibrary().MoveHat(8); // 止める
-  delay(920);
+  delay(930);
 
   //A
   SwitchControlLibrary().PressButtonA();
-  delay(100);
+  delay(70);
   SwitchControlLibrary().ReleaseButtonA();
-  delay(900);
+  delay(930);
 
   //.
   delay(1000);
 
   //↓
   SwitchControlLibrary().MoveHat(4); // 下
-  delay(80);
+  delay(70);
   SwitchControlLibrary().MoveHat(8); // 止める
-  delay(920);
+  delay(930);
 
   //..
   delay(2000);
 
   //AA
   SwitchControlLibrary().PressButtonA();
-  delay(100);
+  delay(70);
   SwitchControlLibrary().ReleaseButtonA();
-  delay(900);
+  delay(930);
   SwitchControlLibrary().PressButtonA();
-  delay(100);
+  delay(70);
   SwitchControlLibrary().ReleaseButtonA();
-  delay(900);
+  delay(930);
 
   //..
   delay(2000);
@@ -105,25 +107,30 @@ void loop()
   delay(2000);
 
   SwitchControlLibrary().PressButtonB();
-  delay(100);
+  delay(70);
   SwitchControlLibrary().ReleaseButtonB();
-  delay(900);
+  delay(930);
 
   delay(10000);
+//delay(9500);
+
   //R
   SwitchControlLibrary().PressButtonR();
-  delay(100);
+  delay(70);
   SwitchControlLibrary().ReleaseButtonR();
-  delay(900);
+  delay(930);
 
   delay(10000);
+//delay(9500);
+
   //R
   SwitchControlLibrary().PressButtonR();
-  delay(100);
+  delay(70);
   SwitchControlLibrary().ReleaseButtonR();
-  delay(900);
+  delay(930);
 
   delay(10000);
+//delay(9500);
 
 
   //RR

@@ -31,47 +31,47 @@ void loop() {
     SwitchControlLibrary().PressButtonA();
     delay(70);
     SwitchControlLibrary().ReleaseButtonA();
-    delay(1430);
+    delay(1200);
   }
   //↑
   SwitchControlLibrary().MoveHat(0);//上
   delay(70);
   SwitchControlLibrary().MoveHat(8);// 止める
-  delay(1430);
+  delay(1200);
 
   //AA
   for (int i=0; i<2; i++){
     SwitchControlLibrary().PressButtonA();
     delay(70);
     SwitchControlLibrary().ReleaseButtonA();
-    delay(1430);
+    delay(1200);
   }
 
   //↑
   SwitchControlLibrary().MoveHat(0);//上
   delay(70);
   SwitchControlLibrary().MoveHat(8);// 止める
-  delay(1430);
+  delay(1200);
 
   //AAAA
   for (int i=0; i<4; i++){
     SwitchControlLibrary().PressButtonA();
     delay(70);
     SwitchControlLibrary().ReleaseButtonA();
-    delay(1430);
+    delay(1200);
   }
   
   //B
   SwitchControlLibrary().PressButtonB();
   delay(70);
   SwitchControlLibrary().ReleaseButtonB();
-  delay(1430);
+  delay(1200);
 
   //↑
   SwitchControlLibrary().MoveHat(0);//上
   delay(70);
   SwitchControlLibrary().MoveHat(8);// 止める
-  delay(1430);
+  delay(1200);
   
   
   //RR不要？
@@ -82,7 +82,7 @@ void loop() {
   SwitchControlLibrary().PressButtonR();
   delay(70);
   SwitchControlLibrary().ReleaseButtonR();
-  delay(1300);
+  delay(1100);
 
 
   
