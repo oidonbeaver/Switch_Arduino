@@ -35,7 +35,7 @@ void loop() {
       
     }
     
-    for (int i =0; i<25; i++){
+    for (int i =0; i<30; i++){
       SwitchControlLibrary().PressButtonB();
       delay(70);
       SwitchControlLibrary().ReleaseButtonB();
