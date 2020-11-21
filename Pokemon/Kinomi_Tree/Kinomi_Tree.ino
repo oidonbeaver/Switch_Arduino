@@ -39,7 +39,7 @@ void loop() {
       SwitchControlLibrary().PressButtonB();
       delay(70);
       SwitchControlLibrary().ReleaseButtonB();
-      delay(200);
+      delay(210);
     }
     delay(700);
     changeday();
