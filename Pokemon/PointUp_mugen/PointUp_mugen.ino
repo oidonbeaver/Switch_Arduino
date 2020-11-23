@@ -44,13 +44,13 @@ void loop() {
       SwitchControlLibrary().PressButtonA();
       delay(70);
       SwitchControlLibrary().ReleaseButtonA();
-      delay(1200);
+      delay(1300);
       
       for (int i=0; i<3;i++){
         SwitchControlLibrary().PressButtonB();
         delay(70);
         SwitchControlLibrary().ReleaseButtonB();
-        delay(500);
+        delay(650);
       }
 
 
