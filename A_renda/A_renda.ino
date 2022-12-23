@@ -1,6 +1,6 @@
 
-//#include <SwitchControlLibrary.h>
-#include <SwitchFunctions.h>
+#include <SwitchControlLibrary.h>
+// #include <SwitchFunctions.h>
 
 void setup() {
   // put your setup code here, to run once:
@@ -36,9 +36,17 @@ void loop() {
  
 
 for (int i = 0; i<500; i++){
-  SwitchControlLibrary().PressButtonA();//ゲーム開始
+  SwitchControlLibrary().pressButton(Button::A);//ゲーム開始
+  SwitchControlLibrary().sendReport();
   delay(50);
-  SwitchControlLibrary().ReleaseButtonA();
+  SwitchControlLibrary().releaseButton(Button::A); 
+  SwitchControlLibrary().sendReport();
+  delay(100);
+  SwitchControlLibrary().pressButton(Button::A);//ゲーム開始
+  SwitchControlLibrary().sendReport();
+  delay(100);
+  SwitchControlLibrary().releaseButton(Button::A); 
+  SwitchControlLibrary().sendReport();
   delay(100);
 }
 //7.5秒
