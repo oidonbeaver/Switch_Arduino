@@ -69,10 +69,10 @@ void loop() {
 
   // ライドフォルムに戻す
   for (int i = 0; i < 2 ; i++) {
-    SwitchControlLibrary().pressHatButton(HatButton::UP);
+    SwitchControlLibrary().moveLeftStick(128, 0); // 左スティック上
     SwitchControlLibrary().sendReport();
     delay(time_push_release);
-    SwitchControlLibrary().releaseHatButton(HatButton::UP);
+    SwitchControlLibrary().moveLeftStick(128, 128); // 左スティックはニュートラル
     SwitchControlLibrary().sendReport();
     delay(time_move_cursor);
   }
@@ -111,6 +111,7 @@ void loop() {
   delay(150);
   // 念の為２回押す
   SwitchControlLibrary().moveLeftStick(255, 128); // 左スティックは右
+  SwitchControlLibrary().sendReport();
   delay(150);
 
 
@@ -128,14 +129,15 @@ void loop() {
   SwitchControlLibrary().sendReport();
   delay(time_move_cursor);
   SwitchControlLibrary().moveLeftStick(128, 128); // 左スティックはニュートラル
+  SwitchControlLibrary().sendReport();
   delay(450);
 
 
   for (int i = 0; i < 2 ; i++) {
-    SwitchControlLibrary().pressHatButton(HatButton::DOWN);
+    SwitchControlLibrary().moveLeftStick(128, 255); // 左スティック下
     SwitchControlLibrary().sendReport();
     delay(time_push_release);
-    SwitchControlLibrary().releaseHatButton(HatButton::DOWN);
+    SwitchControlLibrary().moveLeftStick(128, 128); // 左スティックはニュートラル
     SwitchControlLibrary().sendReport();
     delay(time_move_cursor);
   }
@@ -175,10 +177,14 @@ void loop() {
 
   delay(550);
   for (int i = 0; i < 3 ; i++) {
-    SwitchControlLibrary().pressHatButton(HatButton::UP);
+    // SwitchControlLibrary().pressHatButton(HatButton::UP);
+    // SwitchControlLibrary().sendReport();
+    SwitchControlLibrary().moveLeftStick(128, 255); // 左スティック下
     SwitchControlLibrary().sendReport();
     delay(time_push_release);
-    SwitchControlLibrary().releaseHatButton(HatButton::UP);
+    // SwitchControlLibrary().releaseHatButton(HatButton::UP);
+    // SwitchControlLibrary().sendReport();
+    SwitchControlLibrary().moveLeftStick(128, 128); // 左スティックはニュートラル
     SwitchControlLibrary().sendReport();
     delay(time_move_cursor);
   }
@@ -204,10 +210,12 @@ void loop() {
   // SwitchControlLibrary().sendReport();
   delay(2000);
 
-  SwitchControlLibrary().pressHatButton(HatButton::LEFT);
+  // SwitchControlLibrary().pressHatButton(HatButton::LEFT);
+  // SwitchControlLibrary().sendReport();
+  SwitchControlLibrary().moveLeftStick(0, 128); // 左スティックは左
   SwitchControlLibrary().sendReport();
   delay(time_push_release);
-  SwitchControlLibrary().releaseHatButton(HatButton::LEFT);
+  SwitchControlLibrary().moveLeftStick(128, 128); // 左スティックはニュートラル
   SwitchControlLibrary().sendReport();
   delay(800);
   // t = t+1;
