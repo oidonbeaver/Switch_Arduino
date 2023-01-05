@@ -2,6 +2,7 @@
 #include <SwitchControlLibrary.h>
 // #include <SwitchFunctions.h>
 int t = 0;
+int d=1;
 // int time_push_release = 120;
 // int time_move_cursor = 200;
 
